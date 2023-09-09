@@ -1,0 +1,30 @@
+package creating.objects;
+
+public class CreatingObjects {
+
+    public static void main(String[] args) {
+
+        person p1 = new person();
+
+        person p2 = new person();
+        p2.set(10);
+        System.out.println(p2.get());
+    }
+
+}
+
+class person {
+
+    String name;
+    int id;
+    private int money;
+
+    public void set(int money) {
+        this.money = money;
+    }
+
+    public int get() {
+        return this.money;
+    }
+
+}
