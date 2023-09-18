@@ -1,0 +1,46 @@
+package javaapplication47;
+
+public class JavaApplication47 {
+
+    public static void main(String[] args) {
+        tuna f1 = new tuna();
+       f1.life();
+
+    }
+
+}
+
+class animal {
+
+    void life() {
+        System.out.println("Have life");
+    }
+}
+
+class fish extends animal {
+
+    void swin() {
+        System.out.println("SWIMS");
+    }
+}
+
+class tuna extends fish {
+
+    void salty() {
+        System.out.println("Tasted salty");
+    }
+}
+
+class bird extends animal {
+
+    void fly() {
+        System.out.println("Can fly");
+    }
+}
+
+class peacock extends bird {
+
+    void feather() {
+        System.out.println("Have nice feather");
+    }
+}
