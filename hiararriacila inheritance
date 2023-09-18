@@ -1,0 +1,43 @@
+package javaapplication47;
+
+public class JavaApplication47 {
+
+    public static void main(String[] args) {
+        dog f1 = new dog();
+        f1.mouth();
+
+    }
+
+}
+
+class animal {
+
+    int leg;
+
+    void mouth() {
+        System.out.println("Have mouth");
+    }
+}
+
+class mammals extends animal {
+
+    int hand;
+
+    void nose() {
+        System.out.println("Have nose");
+    }
+}
+
+class dog extends animal {
+
+    void fahim() {
+        System.out.println("sigma");
+    }
+}
+
+class fish extends animal {
+
+    void alvi() {
+        System.out.println("Swims");
+    }
+}
