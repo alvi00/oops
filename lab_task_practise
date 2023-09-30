@@ -1,0 +1,111 @@
+
+package javaapplication52;
+
+public class JavaApplication52 {
+    public static void main(String[] args) {
+      
+        Circle c1=new Circle(5.0,"green");
+        Cylinder c2=new Cylinder(5.0,5.0,"green");
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+    }
+    
+}
+//////this is the main class
+
+
+package javaapplication52;
+
+class Circle {
+
+    private double radius;
+    private String color;
+
+    Circle() {
+        this.radius = 1.0;
+        this.color = "red";
+    }
+
+    Circle(double radius) {
+        this.radius = radius;
+    }
+
+    Circle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    public double getRadius() {
+        return this.radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String toString() {
+        return this.color + " this is the color and " + this.radius + " this is the radius";
+    }
+
+    public double getArea() {
+        double a = 2 * 3.1416 * this.radius;
+        return a;
+    }
+
+}
+/////this is the second class
+
+
+package javaapplication52;
+
+public class Cylinder extends Circle {
+
+    private double height;
+
+    Cylinder() {
+        super();
+        this.height = 1.0;
+    }
+
+    Cylinder(double height) {
+        super();
+        this.height = height;
+    }
+
+    Cylinder(double height, double radius) {
+        super(radius);
+        this.height = height;
+    }
+
+    Cylinder(double height, double radius, String color) {
+        super(radius, color);
+        this.height = height;
+    }
+
+    public double getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public String toString() {
+        return this.height + "this is the height and " + getRadius() + " and the color is " + getColor();
+    }
+
+    public double getVolume() {
+        double a = 3.1416 * getRadius() * getRadius() * this.height;
+        return a;
+    }
+
+}
+////this is the 3rd class
