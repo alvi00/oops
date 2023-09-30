@@ -1,0 +1,13 @@
+
+package javaapplication52;
+
+public class JavaApplication52 {
+    public static void main(String[] args) {
+      
+        Circle c1=new Circle(5.0,"green");
+        Cylinder c2=new Cylinder(5.0,5.0,"green");
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+    }
+    
+}
