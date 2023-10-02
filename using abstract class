@@ -1,0 +1,51 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+
+        study s1 = new study();
+        s1.eat();
+        s1.beh();
+        play p1 = new play();
+        p1.eat();
+        p1.beh();
+        s1.changename("anas");
+        p1.changename("alvi");
+    }
+}
+////////
+public abstract class anas {
+
+    String name;
+
+    anas() {
+        this.name = "anas";
+    }
+
+    public void eat() {
+        System.out.println("Anas can eat");
+    }
+
+    public abstract void beh();
+}
+///////
+public class study extends anas {
+    public void beh() {
+        System.out.println("Anas studies in class 11");
+    }
+
+    public void changename(String name) {
+        this.name = name;
+        System.out.println(this.name);
+    }
+
+}
+///////
+public class play extends anas {
+    public void beh() {
+        System.out.println("Anas plays velorant");
+    }
+
+    public void changename(String name) {
+        this.name = name;
+        System.out.println(this.name);
+    }
+}
