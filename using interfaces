@@ -1,0 +1,34 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+        bear b1 = new bear();
+        b1.eat();
+        b1.walk();
+        b1.drink();
+    }
+}
+///////////
+interface hernibore {
+    void eat();
+
+    void walk();
+}
+////////////
+interface carbibhore {
+    void eat();
+
+    void drink();
+}
+///////////////
+public class bear implements hernibore, carbibhore {
+    public void eat() {
+        System.out.println("Bear eats everthing");
+    }
+
+    public void walk() {
+        System.out.println("Bear can walk");
+    }
+
+    public void drink() {
+        System.out.println("Bear also drinks");
+    }
+}
